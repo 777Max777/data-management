@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: postgres
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/configurator2
+    driverClassName: org.postgresql.Driver
+    validationQuery: SELECT 1
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+hibernate:
+      physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      show_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
